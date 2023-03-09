@@ -18,14 +18,13 @@ Circle::~Circle()
 {
     cout << this << "===객체 소멸===\n";
 }
-Circle::Circle()
+Circle::Circle() : radius(1.0)
 {
     cout << this << "객체 생성, 기본생성자 \n";
 }
-Circle::Circle(double value)
+Circle::Circle(double value) : radius(value)
 {
     cout << this << "객체 생성, 인스턴스가 있는생성자 \n";
-    radius = value;
 }
 
 double Circle::getRadius() const
