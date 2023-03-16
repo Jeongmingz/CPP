@@ -10,6 +10,7 @@ public:
     Circle(); // constructer 기본 생성자
     Circle(double value); // 매개변수 생성자
     //Circle(const Circle& circle); // 복사생성자 copy constructer
+    Circle(const Circle& circle) = delete;
     ~Circle(); // 소멸자
 
     // const는
