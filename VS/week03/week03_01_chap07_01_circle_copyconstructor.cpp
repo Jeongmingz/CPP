@@ -5,6 +5,7 @@ class Circle
 {
 private:
     double radius; // 필드, 맴버변수, 데이터맴버, 속성
+    static int count; // 정적변수 (클래스 변수)
 public:
     Circle(); // constructer 기본 생성자
     Circle(double value); // 매개변수 생성자
@@ -18,18 +19,18 @@ public:
     double getPerimeter() const;
     void setRadius(double value);
 };
-Circle::~Circle()
-{
-    cout << this << "===객체 소멸===\n";
-}
+
+int Circle::count = 0; // 정적변수 초기화 init
 Circle::Circle() : radius(1.0) // 초기화 리스트
 {
     // radius == 1.0
     cout << this << "객체 생성, 기본생성자 \n";
+    count++;
 }
 Circle::Circle(double value) : radius(value)
 {
     cout << this << "객체 생성, 인스턴스가 있는생성자 \n";
+    count++;
 }
 Circle::Circle(const Circle& circle) : radius(circle.radius)
 {
@@ -37,6 +38,13 @@ Circle::Circle(const Circle& circle) : radius(circle.radius)
     // 메인함수 내에서 사용하려면 메인함수에서 선언된 객체를 복사 해야한다.
     //this->radius = circle.radius; // radius = circle.radius
     cout << this << "객체 생성, 복사 생성자 \n";
+    count++;
+
+}
+Circle::~Circle()
+{
+    cout << this << "===객체 소멸===\n";
+    count--;
 }
 
 
