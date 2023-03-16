@@ -9,8 +9,9 @@ private:
 public:
     Circle(); // constructer 기본 생성자
     Circle(double value); // 매개변수 생성자
-    //Circle(const Circle& circle); // 복사생성자 copy constructer
-    Circle(const Circle& circle) = delete;
+    Circle(const Circle& circle); // 복사생성자 copy constructer
+    //Circle(const Circle& circle) = delete; // 인터프리터가 묵시적으로 복사생성자를 만드는걸 방지하게 해준다.
+
     ~Circle(); // 소멸자
 
     // const는
@@ -34,14 +35,14 @@ Circle::Circle(double value) : radius(value)
     cout << this << "객체 생성, 인스턴스가 있는생성자 \n";
     count++;
 }
-//Circle::Circle(const Circle& circle) : radius(circle.radius)
-//{
-//    // 일반함수 내에서 복사생성자를 사용 하려면 일반함수에서 선언된 객체를 복사하고,
-//    // 메인함수 내에서 사용하려면 메인함수에서 선언된 객체를 복사 해야한다.
-//    //this->radius = circle.radius; // radius = circle.radius
-//    cout << this << "객체 생성, 복사 생성자 \n";
-//    count++;
-//}
+Circle::Circle(const Circle& circle) : radius(circle.radius)
+{
+    // 일반함수 내에서 복사생성자를 사용 하려면 일반함수에서 선언된 객체를 복사하고,
+    // 메인함수 내에서 사용하려면 메인함수에서 선언된 객체를 복사 해야한다.
+    //this->radius = circle.radius; // radius = circle.radius
+    cout << this << "객체 생성, 복사 생성자 \n";
+    count++;
+}
 Circle::~Circle()
 {
     cout << this << "===객체 소멸===\n";
@@ -109,8 +110,8 @@ int main()
 
     {
         Circle circle7;
+   
     }
-
     cout << Circle::getCount() << endl;
     return 0;
 }
