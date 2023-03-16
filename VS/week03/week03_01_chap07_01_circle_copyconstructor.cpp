@@ -12,7 +12,7 @@ public:
     ~Circle(); // 소멸자
 
     // const는
-    // field, member변수의 side effect 가 발생하지 않는다.
+    // field, member변수의 side effect가 발생하지 않는다.
     double getRadius() const; 
     double getArea() const;
     double getPerimeter() const;
