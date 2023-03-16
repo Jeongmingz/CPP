@@ -105,5 +105,11 @@ int main()
 
     Circle circle3;
     circle2.setRadius(20.0);
+
+    {
+        Circle circle7;
+    }
+
+    cout << Circle::getCount() << endl;
     return 0;
 }
