@@ -18,6 +18,7 @@ public:
     double getArea() const;
     double getPerimeter() const;
     void setRadius(double value);
+    static int getCount();
 };
 
 int Circle::count = 0; // 정적변수 초기화 init
@@ -39,7 +40,6 @@ Circle::Circle(const Circle& circle) : radius(circle.radius)
     //this->radius = circle.radius; // radius = circle.radius
     cout << this << "객체 생성, 복사 생성자 \n";
     count++;
-
 }
 Circle::~Circle()
 {
@@ -66,52 +66,44 @@ void Circle::setRadius(double value)
 {
     radius = value;
 }
+int Circle::getCount() // static
+{
+    return count;
+}
 
 // 멤버 함수가 아닌 일반 함수
 void test()
 {
-    cout << "Circle 5" << endl;
     Circle circle5;
-    cout << "반지름: " << circle5.getRadius() << endl;
 
-
-    cout << "Circle 4" << endl;
     Circle circle4;
     circle4.setRadius(100.0);
-    cout << "반지름: " << circle4.getRadius() << endl;
 
-    cout << "Circle 6" << endl;
     Circle circle6(circle5);
-    cout << "반지름: " << circle6.getRadius() << endl;
 
+    cout << Circle::getCount() << endl;
 }
 
 int main()
 {
+    cout << Circle::getCount() << endl;
+
     // 첫 번째 circle 객체를 만들고 멤버 함수 호출
-    cout << "Circle 1" << endl;
     Circle circle1;
+
+    cout << Circle::getCount() << endl;
 
     test();
 
+    cout << Circle::getCount() << endl;
+
     circle1.setRadius(10.0);
-    cout << "반지름: " << circle1.getRadius() << endl;
-    cout << "넓이: " << circle1.getArea() << endl;
-    cout << "둘레: " << circle1.getPerimeter() << endl << endl;
     // 두 번째 circle 객체를 만들고 멤버 함수 호출  
 
-    cout << "Circle 2" << endl;
     Circle circle2;
     circle2.setRadius(20.0);
-    cout << "반지름: " << circle2.getRadius() << endl;
-    cout << "넓이: " << circle2.getArea() << endl;
-    cout << "둘레: " << circle2.getPerimeter() << endl << endl;
 
-    cout << "Circle 3" << endl;
     Circle circle3;
     circle2.setRadius(20.0);
-    cout << "반지름: " << circle2.getRadius() << endl;
-    cout << "넓이: " << circle2.getArea() << endl;
-    cout << "둘레: " << circle2.getPerimeter() << endl << endl;
     return 0;
 }
