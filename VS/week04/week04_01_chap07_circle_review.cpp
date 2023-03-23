@@ -1,21 +1,21 @@
-//#include <iostream>
+ï»¿//#include <iostream>
 //using namespace std;
 //
 //class Circle
 //{
 //private:
-//    double radius; // ÇÊµå, ¸É¹öº¯¼ö, µ¥ÀÌÅÍ¸É¹ö, ¼Ó¼º
-//    static int count; // Á¤Àûº¯¼ö (Å¬·¡½º º¯¼ö)
+//    double radius; // í•„ë“œ, ë§´ë²„ë³€ìˆ˜, ë°ì´í„°ë§´ë²„, ì†ì„±
+//    static int count; // ì •ì ë³€ìˆ˜ (í´ë˜ìŠ¤ ë³€ìˆ˜)
 //public:
-//    Circle(); // constructer ±âº» »ı¼ºÀÚ
-//    Circle(double value); // ¸Å°³º¯¼ö »ı¼ºÀÚ
-//    //Circle(const Circle& circle); // º¹»ç»ı¼ºÀÚ copy constructer
-//    Circle(const Circle& circle) = delete; // ÀÎÅÍÇÁ¸®ÅÍ°¡ ¹¬½ÃÀûÀ¸·Î º¹»ç»ı¼ºÀÚ¸¦ ¸¸µå´Â°É ¹æÁöÇÏ°Ô ÇØÁØ´Ù.
+//    Circle(); // constructer ê¸°ë³¸ ìƒì„±ì
+//    Circle(double value); // ë§¤ê°œë³€ìˆ˜ ìƒì„±ì
+//    //Circle(const Circle& circle); // ë³µì‚¬ìƒì„±ì copy constructer
+//    Circle(const Circle& circle) = delete; // ì¸í„°í”„ë¦¬í„°ê°€ ë¬µì‹œì ìœ¼ë¡œ ë³µì‚¬ìƒì„±ìë¥¼ ë§Œë“œëŠ”ê±¸ ë°©ì§€í•˜ê²Œ í•´ì¤€ë‹¤.
 //
-//    ~Circle(); // ¼Ò¸êÀÚ
+//    ~Circle(); // ì†Œë©¸ì
 //
-//    // const´Â
-//    // field, memberº¯¼öÀÇ side effect°¡ ¹ß»ıÇÏÁö ¾Ê´Â´Ù.
+//    // constëŠ”
+//    // field, memberë³€ìˆ˜ì˜ side effectê°€ ë°œìƒí•˜ì§€ ì•ŠëŠ”ë‹¤.
 //    double getRadius() const;
 //    double getArea() const;
 //    double getPerimeter() const;
@@ -23,29 +23,29 @@
 //    static int getCount();
 //};
 //
-//int Circle::count = 0; // Á¤Àûº¯¼ö ÃÊ±âÈ­ init
-//Circle::Circle() : radius(1.0) // ÃÊ±âÈ­ ¸®½ºÆ®
+//int Circle::count = 0; // ì •ì ë³€ìˆ˜ ì´ˆê¸°í™” init
+//Circle::Circle() : radius(1.0) // ì´ˆê¸°í™” ë¦¬ìŠ¤íŠ¸
 //{
 //    // radius == 1.0
-//    cout << this << "°´Ã¼ »ı¼º, ±âº»»ı¼ºÀÚ \n";
+//    cout << this << "ê°ì²´ ìƒì„±, ê¸°ë³¸ìƒì„±ì \n";
 //    count++;
 //}
 //Circle::Circle(double value) : radius(value)
 //{
-//    cout << this << "°´Ã¼ »ı¼º, ÀÎ½ºÅÏ½º°¡ ÀÖ´Â»ı¼ºÀÚ \n";
+//    cout << this << "ê°ì²´ ìƒì„±, ì¸ìŠ¤í„´ìŠ¤ê°€ ìˆëŠ”ìƒì„±ì \n";
 //    count++;
 //}
 ////Circle::Circle(const Circle& circle) : radius(circle.radius)
 ////{
-////    // ÀÏ¹İÇÔ¼ö ³»¿¡¼­ º¹»ç»ı¼ºÀÚ¸¦ »ç¿ë ÇÏ·Á¸é ÀÏ¹İÇÔ¼ö¿¡¼­ ¼±¾ğµÈ °´Ã¼¸¦ º¹»çÇÏ°í,
-////    // ¸ŞÀÎÇÔ¼ö ³»¿¡¼­ »ç¿ëÇÏ·Á¸é ¸ŞÀÎÇÔ¼ö¿¡¼­ ¼±¾ğµÈ °´Ã¼¸¦ º¹»ç ÇØ¾ßÇÑ´Ù.
+////    // ì¼ë°˜í•¨ìˆ˜ ë‚´ì—ì„œ ë³µì‚¬ìƒì„±ìë¥¼ ì‚¬ìš© í•˜ë ¤ë©´ ì¼ë°˜í•¨ìˆ˜ì—ì„œ ì„ ì–¸ëœ ê°ì²´ë¥¼ ë³µì‚¬í•˜ê³ ,
+////    // ë©”ì¸í•¨ìˆ˜ ë‚´ì—ì„œ ì‚¬ìš©í•˜ë ¤ë©´ ë©”ì¸í•¨ìˆ˜ì—ì„œ ì„ ì–¸ëœ ê°ì²´ë¥¼ ë³µì‚¬ í•´ì•¼í•œë‹¤.
 ////    //this->radius = circle.radius; // radius = circle.radius
-////    cout << this << "°´Ã¼ »ı¼º, º¹»ç »ı¼ºÀÚ \n";
+////    cout << this << "ê°ì²´ ìƒì„±, ë³µì‚¬ ìƒì„±ì \n";
 ////    count++;
 ////}
 //Circle::~Circle()
 //{
-//    cout << this << "===°´Ã¼ ¼Ò¸ê===\n";
+//    cout << this << "===ê°ì²´ ì†Œë©¸===\n";
 //    count--;
 //}
 //
@@ -73,7 +73,7 @@
 //    return count;
 //}
 //
-//// ¸â¹ö ÇÔ¼ö°¡ ¾Æ´Ñ ÀÏ¹İ ÇÔ¼ö
+//// ë©¤ë²„ í•¨ìˆ˜ê°€ ì•„ë‹Œ ì¼ë°˜ í•¨ìˆ˜
 //void test()
 //{
 //    Circle circle5;
@@ -92,7 +92,7 @@
 //{
 //    cout << Circle::getCount() << endl;
 //
-//    // Ã¹ ¹øÂ° circle °´Ã¼¸¦ ¸¸µé°í ¸â¹ö ÇÔ¼ö È£Ãâ
+//    // ì²« ë²ˆì§¸ circle ê°ì²´ë¥¼ ë§Œë“¤ê³  ë©¤ë²„ í•¨ìˆ˜ í˜¸ì¶œ
 //    Circle circle1;
 //
 //    cout << Circle::getCount() << endl;
@@ -102,7 +102,7 @@
 //    cout << Circle::getCount() << endl;
 //
 //    circle1.setRadius(10.0);
-//    // µÎ ¹øÂ° circle °´Ã¼¸¦ ¸¸µé°í ¸â¹ö ÇÔ¼ö È£Ãâ  
+//    // ë‘ ë²ˆì§¸ circle ê°ì²´ë¥¼ ë§Œë“¤ê³  ë©¤ë²„ í•¨ìˆ˜ í˜¸ì¶œ  
 //
 //    Circle circle2;
 //    circle2.setRadius(20.0);
