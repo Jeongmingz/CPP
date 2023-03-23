@@ -86,7 +86,7 @@
 //    Circle circle6(circle5.getRadius());
 //
 //    cout << Circle::getCount() << endl;
-//}
+//}0
 //
 //int main()
 //{
