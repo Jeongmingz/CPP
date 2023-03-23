@@ -130,6 +130,7 @@
     <ClCompile Include="app.cpp" />
     <ClCompile Include="circle.cpp" />
     <ClCompile Include="week04_01_chap07_circle_review.cpp" />
+    <ClCompile Include="week04_03_chap09_reference_pointer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="circle.h" />
