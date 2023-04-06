@@ -4,7 +4,9 @@ using namespace std;
 
 int main() {
 	int rSize, cSize;
+	cout << "몇명의 학생이 있나요 ? ";
 	cin >> rSize; // 행 학생 수
+	cout << "몇개의 과목이 있나요 ? ";
 	cin >> cSize; // 열 과목 수
 
 	int** scores = new int* [rSize]; // pointer Array (heap memory)
@@ -29,7 +31,7 @@ int main() {
 			sum = sum + score;
 		}
 		avg = sum / cSize;
-		cout << "평균은 " << avg << "점 입니다.\n\n";
+		cout << i + 1 << "번 학생의 평균은 " << avg << "점 입니다.\n\n";
 	}
 
 
