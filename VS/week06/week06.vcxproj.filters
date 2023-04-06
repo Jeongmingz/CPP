@@ -18,5 +18,8 @@
     <ClCompile Include="week06_01_chap09_memory.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="week06_02_chap09_memory.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
