@@ -129,6 +129,8 @@
   <ItemGroup>
     <ClCompile Include="week06_01_chap09_memory.cpp" />
     <ClCompile Include="week06_02_chap09_memory.cpp" />
+    <ClCompile Include="week06_03_chap10_cstring.cpp" />
+    <ClCompile Include="week06_04_chap09_circle.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

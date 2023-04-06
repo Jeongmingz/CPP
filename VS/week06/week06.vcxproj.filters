@@ -21,5 +21,11 @@
     <ClCompile Include="week06_02_chap09_memory.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="week06_03_chap10_cstring.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="week06_04_chap09_circle.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
