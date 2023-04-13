@@ -114,7 +114,7 @@ int main()
     cout << circleCopy->getArea() << endl;
 
     delete circleCopy;
-    circleCopy = nullptr;
+    circleCopy = nullptr; // 메모리번지 주소가 살아있기 때문에 nullptr을 대입
 
     cout << Circle::getCount() << endl;
 
