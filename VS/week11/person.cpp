@@ -30,7 +30,7 @@ string Person::getname() const
     return string();
 }
 
-void Person::print()
+void Person::print() const
 {
     cout << name << '\n';
 }

@@ -1,9 +1,12 @@
 #include "person.h"
 #include "student.h"
+#include "employee.h"
 
 
 int main()
 {
+    Employee employee1(33333333L, "대머리", 90000);
+    Employee employee2;
     // Person 객체 인스턴스화하고 사용
     Person person;
     Person person2(111111112L, "대머림");
@@ -13,6 +16,8 @@ int main()
 
     person.print(); // 김대림
     person2.print();
+    employee1.print();
+    employee2.print();
 
     // Student 클래스 인스턴스화하고 사용
     Student student;

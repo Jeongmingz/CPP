@@ -16,7 +16,7 @@ double Student::getGPA() const
 {
     return gpa;
 }
-void Student::print() {
+void Student::print() const{
     Person::print(); // ю╖юс (Delegation)
     cout << gpa << '\n';
 }

@@ -18,5 +18,5 @@ public:
     long getId() const;
     void setname(string name);
     string getname() const;
-    void print();
+    void print() const;
 };

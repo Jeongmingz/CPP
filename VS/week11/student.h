@@ -21,5 +21,5 @@ public:
         setId(9);
         return getId();
     }
-    void print();
+    void print() const;
 };
