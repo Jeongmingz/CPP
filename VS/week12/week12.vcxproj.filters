@@ -15,11 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="week07_01_chap10_string.cpp">
+    <ClCompile Include="week12_01_chap11_association01.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="week07_02_chap10_string.cpp">
+    <ClCompile Include="invoice.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="product.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="company.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="invoice.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="product.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="company.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

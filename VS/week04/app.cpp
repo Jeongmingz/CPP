@@ -1,11 +1,10 @@
 #include "circle.h"
-#include "circle.h"
 
 //int main()
 //{
 //    cout << Circle::getCount() << endl;
 //
-//    // Ã¹ ¹øÂ° circle °´Ã¼¸¦ ¸¸µé°í ¸â¹ö ÇÔ¼ö È£Ãâ
+//    // Ã¹ ï¿½ï¿½Â° circle ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½ È£ï¿½ï¿½
 //    Circle circle1;
 //
 //    cout << Circle::getCount() << endl;
@@ -13,7 +12,7 @@
 //    cout << Circle::getCount() << endl;
 //
 //    circle1.setRadius(10.0);
-//    // µÎ ¹øÂ° circle °´Ã¼¸¦ ¸¸µé°í ¸â¹ö ÇÔ¼ö È£Ãâ  
+//    // ï¿½ï¿½ ï¿½ï¿½Â° circle ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½ È£ï¿½ï¿½  
 //
 //    Circle circle2;
 //    circle2.setRadius(20.0);

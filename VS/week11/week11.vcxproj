@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{fb0a40e2-04b5-4deb-9797-8c8179a1bd40}</ProjectGuid>
-    <RootNamespace>week07</RootNamespace>
+    <ProjectGuid>{f3e069b5-1c30-41e7-8537-707376858e6c}</ProjectGuid>
+    <RootNamespace>week11</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,8 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="week07_01_chap10_string.cpp" />
-    <ClCompile Include="week07_02_chap10_string.cpp" />
+    <ClCompile Include="employee.cpp" />
+    <ClCompile Include="person.cpp" />
+    <ClCompile Include="student.cpp" />
+    <ClCompile Include="week11_01_chap11_inheritance02.cpp" />
+    <ClCompile Include="week11_01_chap11_inheritance03.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="employee.h" />
+    <ClInclude Include="person.h" />
+    <ClInclude Include="student.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

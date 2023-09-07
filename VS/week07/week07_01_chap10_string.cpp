@@ -1,4 +1,5 @@
- 
+#pragma warning(disable: 4996)
+
 #include <iostream>
 #include <cstring> // c���� string.h�� ���Ǵ� ���̺귯��
 using namespace std;

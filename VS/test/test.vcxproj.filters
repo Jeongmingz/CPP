@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="week07_01_chap10_string.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="week07_02_chap10_string.cpp">
+    <ClCompile Include="students.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
